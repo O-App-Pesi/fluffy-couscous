@@ -51,7 +51,7 @@ a {
 @mixin startingposition {
     top: 10rem; left: 0%;
 }
-
+// Second Text Component
 #first {
     @include div-styling();
     height: 25vh;

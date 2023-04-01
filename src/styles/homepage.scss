@@ -19,7 +19,6 @@ $timing-function-bezier: cubic-bezier( 1, 0.02, 0.47, 1.02 );
     top: 10rem; left: 0%;
 }
 
-// First Text Component
 #first {
     @include div-styling();
     animation-name: fall-in-blue;
@@ -30,7 +29,6 @@ $timing-function-bezier: cubic-bezier( 1, 0.02, 0.47, 1.02 );
     align-items: flex-end;
         @import "defaults/mainheading";
 }
-// Second Text Component
 #second {
     @include div-styling();
     animation-name: fall-in-yellow;
@@ -50,7 +48,6 @@ $timing-function-bezier: cubic-bezier( 1, 0.02, 0.47, 1.02 );
         }
     }
 }
-// Third Text Component
 #third {
     @include div-styling();
     animation-name: fall-in-orange;
@@ -70,7 +67,6 @@ $timing-function-bezier: cubic-bezier( 1, 0.02, 0.47, 1.02 );
         }
     }
 }
-// Fourth Text Component
 #fourth {
     @include div-styling();
     animation-name: fall-in-purple;
