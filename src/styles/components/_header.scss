@@ -33,9 +33,9 @@
         button:hover {
             cursor: pointer;
         }
-        @media (min-width: 700px) {
+            @media (min-width: 700px) {
             flex-direction: column;
             width: 5vw;
             height: 30vh;
-        }
+            }
 }
