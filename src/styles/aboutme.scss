@@ -1,0 +1,87 @@
+@import "components/utils";
+@import "defaults/colours";
+@import "components/header";
+@import "components/footer";
+@import "components/index";
+@import "defaults/mainheading";
+@import "defaults/fonts";
+
+$max-width-div: 600px;
+
+@mixin div-styling() {
+    width: 100%;
+    min-height: 25vh;
+    display: flex;
+}
+
+@mixin flex-styling() {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+span {
+    font-family: $heading-font;
+    padding: .5rem;
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: $sand;
+}
+
+
+#first {
+    @include div-styling();
+    background-color: $sunny-yellow;
+    max-width: $max-width-div;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+// Second Graphical Component
+#second {
+    @include div-styling();
+    @include flex-styling();
+    background-color: $blue-ocean;
+    max-width: $max-width-div;
+    z-index: -1;
+        a {
+        color: $sunny-yellow;
+        }
+        img {
+            width: 100%;
+            padding: 1rem;
+        }
+}
+// Third Text Component
+#third {
+    @include div-styling();
+    @include flex-styling();
+    background-color: $sand;
+    max-width: $max-width-div;
+    z-index: -2;
+    font-family: $paragraph-font;
+        #bottom {
+            align-self: flex-end;
+            padding: 0 1rem 1rem 1rem;
+        }
+        #top {
+            padding: 1rem 1rem 0 1rem;
+        }
+}
+// Fourth Text Component
+#fourth {
+    @include div-styling();
+    background-color: $burgundy;
+    max-width: $max-width-div;
+    z-index: -3;
+    flex-direction: column;
+    padding-top: 1rem;
+        span{
+            font-family: $paragraph-font;
+            align-self: flex-end;
+        }
+}
